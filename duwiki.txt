@@ -1,0 +1,16 @@
+void main() {
+  //string = tipe data untuk kalimat
+  String nama = "duwiki wahyudi";
+print ("nama : $nama ");
+//int=tipe data untuk angka
+int  umur = 19;
+print ("umur : $umur");
+//bool=tipe data untuk true dan false
+bool mahasiswa = true ;
+print ("mahasiswa : $mahasiswa");
+//double=tipe data untuk bilangan berkoma
+double ipk = 4.0;
+print ("ipk : $ipk");
+
+  
+}
