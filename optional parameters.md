@@ -13,7 +13,7 @@ String whisper(String str, {bool mysteriously: false}) {
 }
 
 
-main() {
+void main() {
   print(yell('Hello, World'));
   print(yell('Hello, World', true));
   print(whisper('Hello, World', mysteriously: true));

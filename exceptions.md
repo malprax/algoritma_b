@@ -1,4 +1,4 @@
-1.//
+//
 class FoodSpoiledError extends StateError {
   FoodSpoiledError(String msg) : super(msg);
 }
@@ -15,6 +15,7 @@ class Potato {
     return "peeled";
   }
 }
+
 void main() {
   var p = new Potato(7);
 
@@ -23,12 +24,15 @@ void main() {
   } on FoodSpoiledError catch(_) {
     print("nope nope nope");
   }
-}
 
-2.void main () {
-try {
+  // any non-null object can be thrown:
+  try {
     throw("potato");
   } catch(_) {
     print("caught a flying potato");
   }
+
+  // exceptions halt excecution
+  p.peel();
+  print('not reached');
 }
